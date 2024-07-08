@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Mảng từ vựng tiếng Anh
+      let englishWords = [
+        "apple",
+        "banana",
+        "orange",
+        "grape",
+        "pineapple",
+        "mango",
+        "strawberry",
+        "watermelon",
+        "lemon",
+        "cherry",
+      ];
+
+      // Mảng từ vựng tiếng Việt
+      let vietnameseWords = [
+        "táo",
+        "chuối",
+        "cam",
+        "nho",
+        "dứa",
+        "xoài",
+        "dâu tây",
+        "dưa hấu",
+        "chanh",
+        "anh đào",
+      ];
+
+      let input = prompt("Nhap Tu Vung Tieng Anh");
+
+      let check;
+
+      for (let index = 0; index < englishWords.length; index++) {
+        check = true;
+
+        if (input === englishWords[index]) {
+          console.log(vietnameseWords[index]);
+          break;
+        } else {
+          check = false;
+        }
+      }
+
+      if (!check) {
+        console.log("Khong co tu vung nhu the");
+      }
+    </script>
+  </body>
+</html>
